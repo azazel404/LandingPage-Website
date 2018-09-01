@@ -1,0 +1,197 @@
+/*Stylesheet for our Theme */
+#mainNav {
+  border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+  background-color: #fff;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#mainNav .navbar-brand {
+  font-weight: 700;
+  text-transform: upercase;
+  color: #b400ff;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: #b400ff;
+}
+#mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+  color: #b400ff;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
+  color: #b400ff !important;
+  background-color: transparent !important;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
+  background-color: transparent !important;
+}
+
+/* global settings */
+html,body{
+  width: 100%;
+  height: 100%;  
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+p{
+    color: white;
+}
+
+header.masthead{
+    position: relative;
+    width: 100%;
+    min-height: 75%;
+    color:white;
+    text-align: center;
+    background-image: url('../img/header.jpg');
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+}
+
+header.masthead .header-content{
+    position: relative;
+    width: 100%;
+    padding: 410px 15px 100px;
+    text-align: center;
+}
+.bg-primary{
+    background-color: #b400ff !important;
+}
+section{
+    padding: 100px;
+}
+/* section contact */
+section#contact{
+    background-color: #b400ff !important;
+}
+section#contact a{
+    color: white;
+}
+section#contact a:hover{
+    color: blue;
+}
+i#fa-color-footer{
+    color: white;
+}
+.btn{
+    /* border-radius: 90px; */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.call-to-action{
+    padding: 50px;
+    color: white;
+}
+.footer{
+    background: white;
+    padding: 25px;
+}
+#contact-form{
+    background:white;
+    /* border-radius: 5px; */
+    padding: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color:#b400ff !important;
+}
+.section-heading{
+    margin: 0;
+    color: white;
+}
+.service-box{
+    padding: 40px;
+    background-color: white;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px -2px 31px 1px rgba(0,0,0,0.13);
+    -moz-box-shadow: 1px -2px 31px 1px rgba(0,0,0,0.13);
+    box-shadow: 1px -2px 31px 1px rgba(0,0,0,0.13);
+}
+.service-box h3{
+    padding: 20px;
+    color: #131313;
+}
+.service-box .fa-4x{
+    color: #b400ff !important;
+}
+#col-footer{
+    padding-top: 40px;
+}
+div#p-con{
+    margin-top: -130px;
+}
+/* .boot-gradient{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    opacity: .9;
+    background-color:rgba(170, 73, 222, 0.72);
+    background-image: linear-gradient(130deg,rgba(73,84,222,0.57)0%,rgba(170,73,222,0.51)100%);
+    background-image: -webkit-linear-gradient(130deg,rgba(73,84,222,0.63)0%,rgba(170,73,222)100%);
+    background-image: -moz-linear-gradient(130deg,rgba(73,84,222,0.85)0%,rgba(170,73,222,0.85)100%);
+    background-image: -ms-linear-gradient(130deg,rgba(73,84,222,0.85)0%,rgba(170,73,222,0.85)100%);
+    background-image: -o-linear-gradient(130deg,rgba(73,84,222,0.85)0%,rgba(170,73,222,0.85)100%);
+} */
+#testimonials {
+	padding: 100px 0;
+	
+}
+#testimonials blockquote {
+	position: relative;
+	margin-top: 20px;
+	border: 0;
+	text-align: center;
+	background: #fff;
+	padding: 30px 20px;
+}
+#testimonials i {
+	font-size: 24px;
+	color: black;
+	margin-bottom: 14px;
+}
+#testimonials p{
+    color: black;
+}
+#testimonials .clients-name {
+	display: inline-block;
+	border-top: 1px solid #eee;
+	padding-top: 20px;
+	margin-top: 10px;
+}
+
+/* rensponsive */
+@media(min-width: 768px){
+    header.masthead{
+        height: 75%;
+        min-height: 600px;
+    }
+}
+@media(min-width: 768px){
+    header.mashead .header-content .header-content-inner{
+        max-width: 1000px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media(min-width: 768px){
+    header.masthead .header-content{
+        position: absolute;
+        top: 50%;
+        padding: 0 50px;
+        transform: translateY(-50%);
+    }
+}
